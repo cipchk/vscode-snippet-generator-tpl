@@ -4,6 +4,9 @@
   "description": "Generate a snippet extensions for vscode",
   "scripts": {
     "build": "vscode-snippet-generator",
+    "build:i18n": "vscode-snippet-generator --i18nTpl=\"{zh-CN}({en-US})\"",
+    "build:zh-CN": "vscode-snippet-generator --i18n=zh-CN --outFile=snippets-zh-CN.json",
+    "build:en-US": "vscode-snippet-generator --i18n=en-US --outFile=snippets-en-US.json",
     "release": "npm run build && vsce package"
   },
   "icon": "icon.png",
@@ -27,6 +30,6 @@
     }]
   },
   "devDependencies": {
-    "vscode-snippet-generator": "^1.0.0"
+    "vscode-snippet-generator": "^1.1.0"
   }
 }

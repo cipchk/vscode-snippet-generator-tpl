@@ -1,6 +1,8 @@
 ---
 prefix: button
-description: Button
+description:
+  zh-CN: 按钮
+  en-US: Button
 scope: typescript,html
 ---
 
